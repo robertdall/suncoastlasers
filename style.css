@@ -318,7 +318,7 @@ textarea {
   -moz-font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
   color: #3a3a3a;
-  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-family: "Lucida Grande" Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.4;
@@ -348,7 +348,7 @@ a:active {
 
 h1, h2, h3, h4, h5, h6 {
   color: #474747;
-  font-family: "Droid Serif", Georgia, Times, "Times New Roman", serif;
+  font-family: "Raleway", Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
   font-weight: 400;
 }
 
@@ -375,7 +375,7 @@ blockquote {
   color: #3a3a3a;
   border-left: 3px solid #009999;
   font-style: italic;
-  font-family: "Droid Serif", Georgia, Times, "Times New Roman", serif;
+  font-family: "Raleway", Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
   margin: 0.625em 0;
   padding: 0.625em;
 }
