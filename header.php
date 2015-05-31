@@ -34,8 +34,8 @@
 	
 	<header id="masthead" class="site-header" role="banner">
 		<div id="branding">
-			<h1 id="logo"><a href="<?php echo home_url() ?>/"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 id="tagline"><?php bloginfo( 'description' ); ?></h2>
+			<h2 id="logo"><a href="<?php echo home_url() ?>/"><?php bloginfo( 'name' ); ?></a></h2>
+			<h3 id="tagline"><?php bloginfo( 'description' ); ?></h3>
 		</div>
 		
 		<nav id="site-navigation" class="main-navigation" role="navigation">
