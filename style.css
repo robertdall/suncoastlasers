@@ -387,12 +387,17 @@ blockquote p {
 
 /* Header Area 
 ---------------------------*/
+
+header {
+	background-color: #374a51;
+	height: 194px;
+}
+
 #branding {
-  float: left;
-  height: auto;
-  position: relative;
-  width: 100%;
-  background-color: #374a51;
+	float: left;
+	height: auto;
+	position: relative;
+	width: 100%;
 }
 
 #branding h2 a {
@@ -467,13 +472,17 @@ blockquote p {
 }
 /* Primary Navigation
 -------------------------------------------------------------- */
+
+#masthead #site-navigation {
+    float: right;
+}
+
 .main-navigation {
   background: #333333;
   clear: both;
   display: block;
   float: left;
   margin: 0 auto 6px;
-  width: 100%;
   font-family: "Raleway",Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif;
 }
 .main-navigation ul {
