@@ -318,7 +318,7 @@ textarea {
   -moz-font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
   color: #3a3a3a;
-  font-family: "Lucida Grande" Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
+  font-family: "Helvetica",Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.4;
@@ -483,7 +483,7 @@ header {
   display: block;
   float: left;
   margin: 0 auto 6px;
-  font-family: Helvetica,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif;
+  font-family: "Helvetica",Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif;
 }
 .main-navigation ul {
   list-style: none;
