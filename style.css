@@ -396,11 +396,13 @@ blockquote p {
 }
 
 #branding h2 a {
-	border: 1px solid red;
 }
 
 #branding h3 {
-	border: 1px solid blue; 
+	color: #fff;
+    display: block;
+    float: left;
+    margin: 1em 0 0.625em 1em;
 }
 
 #branding img {
@@ -472,6 +474,7 @@ blockquote p {
   float: left;
   margin: 0 auto 6px;
   width: 100%;
+  font-family: "Raleway",Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif;
 }
 .main-navigation ul {
   list-style: none;
@@ -556,7 +559,7 @@ blockquote p {
   .menu-toggle {
     background: #3a3a3a;
     color: white;
-    font-family: Tahoma, Verdana, Segoe, sans-serif;
+      font-family: "Raleway",Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
