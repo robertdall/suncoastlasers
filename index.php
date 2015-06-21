@@ -8,28 +8,32 @@
 get_header(); ?>
 
 <div id="main">
+
+	<div id="wrap">
 	
-	<section id="content">
-		
-	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<section id="content">
 			
-			<h2 class="post-title"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			
-			<?php the_content( __( 'Read more', 'blm_basic' ) ); ?>
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				
-			<?php get_template_part( 'inc/meta' ); ?>
-
-		</article>
+				<h2 class="post-title"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+				
+				<?php the_content( __( 'Read more', 'blm_basic' ) ); ?>
+					
+				<?php get_template_part( 'inc/meta' ); ?>
+	
+			</article>
+			
+		<?php endwhile; endif; ?>
 		
-	<?php endwhile; endif; ?>
+		<?php get_template_part( 'inc/nav' ); ?>
+		
+		</section><!-- #content -->
 	
-	<?php get_template_part( 'inc/nav' ); ?>
-	
-	</section><!-- #content -->
+		<?php get_sidebar(); ?>
 
-<?php get_sidebar(); ?>
+	</div> <!-- #wrap -->
 
 </div><!-- #main -->
 

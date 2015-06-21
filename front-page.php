@@ -26,9 +26,7 @@ get_header(); ?>
 			<?php endwhile; endif; ?>
 			
 		</section><!-- #content -->
-	
-		<?php get_sidebar(); ?>
-	</div> <!-- #wrap -->
+	</div><!-- #wrap -->	
 
 </div><!-- #main -->
 

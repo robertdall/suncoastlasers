@@ -29,18 +29,20 @@
 </head>
 <body <?php body_class(); ?>>
 	
-<div id="wrap">
+
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'blm_basic' ); ?></a>
 	
 	<header id="masthead" class="site-header" role="banner">
-		<div id="branding">
-			<h2 id="logo"><a href="<?php echo home_url() ?>/"><?php bloginfo( 'name' ); ?></a></h2>
-			<h3 id="tagline"><?php bloginfo( 'description' ); ?></h3>
-		</div>
-		
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle"><?php _e( 'Menu', 'blm_basic' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav><!-- #site-navigation -->		
+		<div id="wrap">
+			<div id="branding">
+				<h2 id="logo"><a href="<?php echo home_url() ?>/"><?php bloginfo( 'name' ); ?></a></h2>
+				<h3 id="tagline"><?php bloginfo( 'description' ); ?></h3>
+			</div>
+			
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<button class="menu-toggle"><?php _e( 'Menu', 'blm_basic' ); ?></button>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+			</nav><!-- #site-navigation -->
+		</div> <!-- #wrap -->	
 	</header>	
 		
