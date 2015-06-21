@@ -6,10 +6,11 @@
  */
 ?>
 	<footer id="footer">
-		<p>&copy; <?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?></p>
+		<div id="wrap">
+			<p>&copy; <?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?></p>
+		</div> <!-- #wrap --> 
 	</footer>
 	
-</div><!-- !wrap -->
 <?php wp_footer(); ?>
 </body>
 </html>
