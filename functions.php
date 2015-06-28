@@ -45,6 +45,18 @@ endif; // blm_theme_setup
 add_action( 'after_setup_theme', 'blm_theme_setup' );
 
 
+/**	
+ *	Adds excerpt to pages 
+ *	rd - June 28 
+ */
+
+add_action( 'init', 'excerpts_in_pages' );
+function excerpts_in_pages() {
+     add_post_type_support( 'page', 'excerpt' );
+}
+
+
+
 /**
  * Register widget area
  */
