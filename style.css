@@ -390,7 +390,7 @@ blockquote p {
 
 header {
 	background-color: #374a51;
-	height: 194px;
+	height: 200px;
 }
 
 #branding {
@@ -666,6 +666,33 @@ header {
   text-align: right;
   width: 50%;
 }
+
+/* Front Page
+-------------------------------------------*/
+
+.home #excerpt {
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+	max-width: 1000px;
+	padding: 2%;
+}
+
+.home #excerpt p {
+	padding: 0px;
+	margin: 0px;
+}
+
+#blue-wrap {
+  background: #becfd7;
+}
+
+@media screen and (max-width: 1000px) {
+  #blue-wrap {
+    width: 100%;
+  }
+}
+
 
 /* Sidebar Area 
 -------------------------------------------*/

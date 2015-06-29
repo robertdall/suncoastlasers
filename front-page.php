@@ -9,17 +9,22 @@ get_header(); ?>
 
 <div id="main">
 
+		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+		
+		<!-- <h1><?php the_title(); ?></h1> -->
+	<div id="blue-wrap">
+		<div id="excerpt">
+			<?php the_excerpt(); ?>
+		</div>
+		
+		<div id="featured-image">
+			<?php the_post_thumbnail(); ?>
+		</div>
+	</div>	
 	<div id="wrap">
-		<section id="content">
-			
-			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-				
+		<section id="content">				
 			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-				
-				<h1><?php the_title(); ?></h1>
 			
-				<?php the_excerpt(); ?>
-				
 				<?php the_content(); ?>
 				
 			</article>
