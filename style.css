@@ -676,7 +676,7 @@ header {
 	margin: 0 auto;
 	padding: 0;
 	position: relative;
-	max-width: 500px;
+	width: 50%;
 	padding: 0% 2%;
 	float: left;
 }
@@ -707,6 +707,24 @@ header {
 	width: 60%;
 }
 
+/* Front Page Sidebar */
+
+#front-sidebar {
+	border: 1px solid yellow;
+	float: left;
+	width: 35%;
+}
+
+#front-sidebar #sidebar { 
+	width: 100%;
+	text-align: center;
+	margin-top: 1em;
+}
+
+#front-sidebar #sidebar h3 {
+	font-family: "Helvetica",Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif;
+}
+
 @media screen and (max-width: 1000px) {
   #blue-wrap {
     width: 100%;
@@ -727,6 +745,7 @@ header {
   margin: 0 0 1em;
   padding: 0 0 0.5em;
   text-transform: uppercase;
+  font-family: "Helvetica",Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif;
 }
 #sidebar ul {
   list-style: none;
