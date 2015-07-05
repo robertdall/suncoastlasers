@@ -26,14 +26,19 @@ get_header(); ?>
 	<div class="wrap">
 		<section id="content">				
 			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-			
 				<?php the_content(); ?>
-				
 			</article>
 			
 			<?php endwhile; endif; ?>
-			
 		</section><!-- #content -->
+		<section id="front-sidebar">
+		<?php if ( is_active_sidebar( 'front-sidebar' ) ) : ?>
+				<ul id="sidebar">
+			<?php dynamic_sidebar( 'front-sidebar' ); ?>
+				</ul>
+		<?php endif; ?>
+		</section>
+		
 	</div><!-- #wrap -->	
 
 </div><!-- #main -->

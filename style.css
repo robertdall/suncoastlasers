@@ -703,6 +703,10 @@ header {
   min-height: 300px;
 }
 
+.home #content {
+	width: 60%;
+}
+
 @media screen and (max-width: 1000px) {
   #blue-wrap {
     width: 100%;
