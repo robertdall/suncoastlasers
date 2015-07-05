@@ -33,7 +33,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'blm_basic' ); ?></a>
 	
 	<header id="masthead" class="site-header" role="banner">
-		<div id="wrap">
+		<div class="wrap">
 			<div id="branding">
 				<h2 id="logo"><a href="<?php echo home_url() ?>/"><?php bloginfo( 'name' ); ?></a></h2>
 				<h3 id="tagline"><?php bloginfo( 'description' ); ?></h3>

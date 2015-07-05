@@ -6,7 +6,7 @@
  */
 ?>
 	<footer id="footer">
-		<div id="wrap">
+		<div class="wrap">
 			<p>&copy; <?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?></p>
 		</div> <!-- #wrap --> 
 	</footer>

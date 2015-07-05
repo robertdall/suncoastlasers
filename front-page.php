@@ -13,15 +13,17 @@ get_header(); ?>
 		
 		<!-- <h1><?php the_title(); ?></h1> -->
 	<div id="blue-wrap">
-		<div id="excerpt">
-			<?php the_excerpt(); ?>
-		</div>
-		
-		<div id="featured-image">
-			<?php the_post_thumbnail(); ?>
-		</div>
-	</div>	
-	<div id="wrap">
+		<div class="wrap">
+			<div id="excerpt">
+				<?php the_excerpt(); ?>
+			</div>
+			
+			<div id="featured-image">
+				<?php the_post_thumbnail(); ?>
+			</div>
+		</div> <!-- end .wrap -->
+	</div>	<!-- end #blue-wrap -->
+	<div class="wrap">
 		<section id="content">				
 			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			

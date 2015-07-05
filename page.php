@@ -9,7 +9,7 @@ get_header(); ?>
 
 <div id="main">
 
-	<div id="wrap">
+	<div class="wrap">
 	
 		<section id="content">
 			
