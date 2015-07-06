@@ -725,6 +725,13 @@ header {
 	font-family: "Helvetica",Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif;
 }
 
+#front-sidebar #sidebar aside {
+    margin: 30px;
+    padding-bottom: 0px;
+    background: #d9e1e6;
+    border-radius: 15px;
+}
+
 @media screen and (max-width: 1000px) {
   #blue-wrap {
     width: 100%;
