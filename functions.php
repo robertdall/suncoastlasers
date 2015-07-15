@@ -33,6 +33,7 @@ function blm_theme_setup() {
 	// Add theme support for menus
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'blm_basic' ),
+		'footer' =>__('Footer Menu','blm_basic'),
 	) );
 	
 	// Enable support for HTML5 markup.

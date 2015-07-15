@@ -7,7 +7,12 @@
 ?>
 	<footer id="footer">
 		<div class="wrap">
-			<p>&copy; <?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?></p>
+			<h4><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h4>
+			<?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>
+		
+		
+			<p class="copyright">&copy; <?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?></p>
+			<p class="copyright">&ndash; Web Design <a href="http://robertdall.com/">Robert Dall</a> </p>
 		</div> <!-- #wrap --> 
 	</footer>
 	

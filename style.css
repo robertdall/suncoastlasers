@@ -845,17 +845,18 @@ header {
 /* Footer area 
 ---------------------*/
 #footer {
-  border-top: 1px dotted #b3b3b3;
   clear: both;
   margin: 0 auto;
   text-align: center;
   width: 100%;
+  background: #374a51;
 }
 #footer p {
   color: #333333;
   font-size: 12px;
   font-size: 1.2rem;
   padding: 0.625em;
+  margin-bottom: 0px;
 }
 #footer a {
   color: #b3b3b3;
