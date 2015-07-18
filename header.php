@@ -37,6 +37,7 @@
 			<div id="branding">
 				<h2 id="logo"><a href="<?php echo home_url() ?>/"><?php bloginfo( 'name' ); ?></a></h2>
 				<h3 id="tagline"><?php bloginfo( 'description' ); ?></h3>
+				<a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/sailing-laser-class-symbol.png" alt="Laser Sailing Class Symbol" /></a>
 			</div>
 			
 			<nav id="site-navigation" class="main-navigation" role="navigation">
