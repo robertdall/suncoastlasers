@@ -29,7 +29,6 @@
 </head>
 <body <?php body_class(); ?>>
 	
-
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'blm_basic' ); ?></a>
 	
 	<header id="masthead" class="site-header" role="banner">
@@ -37,13 +36,10 @@
 			<div id="branding">
 				<h2 id="logo"><a href="<?php echo home_url() ?>/"><?php bloginfo( 'name' ); ?></a></h2>
 				<h3 id="tagline"><?php bloginfo( 'description' ); ?></h3>
-				<a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/sailing-laser-class-symbol.png" alt="Laser Sailing Class Symbol" /></a>
 			</div>
-			
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<button class="menu-toggle"><?php _e( 'Menu', 'blm_basic' ); ?></button>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 			</nav><!-- #site-navigation -->
 		</div> <!-- #wrap -->	
-	</header>	
-		
+	</header>
