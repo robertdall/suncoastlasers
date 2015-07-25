@@ -14,8 +14,8 @@ get_header(); ?>
 		<!-- <h1><?php the_title(); ?></h1> -->
 	<div id="blue-wrap">
 		<div class="wrap">
-			<div id="excerpt">
-				<?php the_excerpt(); ?>
+			<div <?php post_class() ?> id="excerpt">
+				<?php the_content(); ?>
 			</div>
 			
 			<div id="featured-image">
@@ -25,10 +25,27 @@ get_header(); ?>
 	</div>	<!-- end #blue-wrap -->
 	<div class="wrap">
 		<section id="content">				
-			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-				<?php the_content(); ?>
-			</article>
 			
+			<?php
+			// The Query
+			$front_news = new WP_Query(
+					array(
+						 'category' => '1',
+						 'posts_per_page' => '1',
+						  ));
+			// The Loop
+			while ( $front_news->have_posts() ) : $front_news->the_post(); 
+			?>
+
+				<h3><a title="News about <?php the_title(); ?>" href="<?php the_permalink() ?>" ><?php the_title(); ?></a></h3>
+				
+			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+				<?php the_excerpt(); ?>
+			</article>
+
+		<?php  // Reset Post Data
+			endwhile; wp_reset_postdata(); ?>
+
 			<?php endwhile; endif; ?>
 		</section><!-- #content -->
 		<section id="front-sidebar">
