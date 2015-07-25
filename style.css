@@ -698,7 +698,7 @@ header {
 #blue-wrap {
   background: #becfd7;
   padding: 1em 0em;
-  min-height: 300px;
+  min-height: 320px;
 }
 
 .home #content {
@@ -873,13 +873,17 @@ header {
 	padding-right: 0.5em;
 }
 
+#footer .footer-menu ul {
+	list-style: none;
+}
+
 #footer .footer-menu .sub-menu {
 	list-style: none;
 	display: none;
 }
 
-#footer #footer-right img {
-	max-width: 200px;
+#footer img.laser-symbol {
+	clear: left;
 }
 
 #footer p.copyright {
