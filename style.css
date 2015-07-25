@@ -1126,15 +1126,66 @@ object {
     page-break-before: avoid;
   }
 }
+
 /* Media Queries
 ------------------------------------- */
+
+/* Yellow */
+@media screen and (max-width: 1000px) {
+	.wrap {
+		color: yellow;
+	}
+	#blue-wrap .wrap {
+		padding: 0% 2%;
+	}
+}
+
+/* Green */
 @media screen and (max-width: 770px) {
+	.wrap {
+		color: green;
+	}
+	
+	#blue-wrap .wrap {
+		padding: 0% 2%;
+	}
+
   .hide-on-medium {
     display: none;
   }
+  
+  #logo {
+	    margin: 1em 0 0.625em 1em;
+	}
+  
 }
-@media screen and (max-width: 500px) {
-  .hide-on-small {
-    display: none;
-  }
+
+/* Lime */
+@media screen and (max-width: 570px) {
+ 	.wrap {
+		color: lime;
+	}
+	
+	#blue-wrap .wrap {
+		padding: 0% 2%;
+	}
+	#branding {
+		background-image: none;
+	}
+}
+
+
+/* Blue */
+@media screen and (max-width: 480px) {
+	.wrap {
+		color: blue;
+	}
+	
+	#blue-wrap .wrap {
+		padding: 0% 2%;
+	}
+
+ 	.hide-on-small {
+    	display: none;
+  	}
 }
