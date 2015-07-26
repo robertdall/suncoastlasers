@@ -41,6 +41,7 @@ get_header(); ?>
 				
 			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 				<?php the_excerpt(); ?>
+				<a href="<?php the_permalink() ?>" rel="bookmark">&nbsp;Read more &raquo;</a></p>
 			</article>
 
 		<?php  // Reset Post Data

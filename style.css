@@ -710,7 +710,6 @@ header {
 /* Front Page Sidebar */
 
 #front-sidebar {
-	border: 1px solid yellow;
 	float: left;
 	width: 35%;
 }
@@ -719,6 +718,10 @@ header {
 	width: 100%;
 	text-align: center;
 	margin-top: 1em;
+}
+
+#front-sidebar ul#sidebar  {
+	margin: 0px;
 }
 
 #front-sidebar #sidebar h3 {
