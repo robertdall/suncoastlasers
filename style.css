@@ -473,8 +473,10 @@ header {
 
 #masthead #site-navigation {
 	position: absolute;
-	right: 50px;
-    top: 161px;
+	left: 0px;
+    top: 162px;
+    width: 100%;
+    z-index: 999;
 }
 
 .main-navigation {
@@ -724,7 +726,7 @@ header {
 }
 
 #front-sidebar #sidebar aside {
-    margin: 30px;
+    margin: 1em;
     padding-bottom: 0px;
     background: #d9e1e6;
     border-radius: 15px;
@@ -1189,8 +1191,13 @@ object {
 	#blue-wrap .wrap {
 		padding: 0% 2%;
 	}
-
+	
+	#blue-wrap {
+		min-height: 200px;
+	}
+	
  	.hide-on-small {
     	display: none;
   	}
+  	
 }
