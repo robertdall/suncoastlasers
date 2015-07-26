@@ -1149,14 +1149,19 @@ object {
 	#blue-wrap .wrap {
 		padding: 0% 2%;
 	}
-
-  .hide-on-medium {
+	
+	.hide-on-medium {
     display: none;
-  }
-  
-  #logo {
-	    margin: 1em 0 0.625em 1em;
+  	}
+  	
+  	#logo {
+	    margin: 0.5em;
 	}
+	
+	#branding h3 {
+		margin: 0.5em;
+	}
+		
   
 }
 
