@@ -129,6 +129,45 @@ function blm_basic_wp_title( $title, $sep ) {
 }
 add_filter( 'wp_title', 'blm_basic_wp_title', 10, 2 );
 
+/**
+ * Removes unuseful Widgets 
+ */
+ function blm_remove_default_widgets() {
+     unregister_widget('WP_Widget_Meta');
+     unregister_widget('WP_Widget_Text');
+     unregister_widget('WP_Widget_Recent_Comments');
+     unregister_widget('WP_Widget_Tag_Cloud');
+ }
+ add_action('widgets_init', 'blm_remove_default_widgets', 11);
+ 
+/**
+ * Clear short code
+ */ 
+
+function clearClass() {
+    return '<div class="clear">&nbsp;</div>';
+}
+
+add_shortcode('clear', 'clearClass');
+
+/**
+ * Hide email from Spam Bots using a shortcode.
+ *
+ * @param array  $atts    Shortcode attributes. Not used.
+ * @param string $content The shortcode content. Should be an email address.
+ *
+ * @return string The obfuscated email address. 
+ */
+function blm_hide_email_shortcode( $atts , $content = null ) {
+	if ( ! is_email( $content ) ) {
+		return;
+	}
+
+	return '<a href="mailto:' . antispambot( $content ) . '">' . antispambot( $content ) . '</a>';
+}
+add_shortcode( 'email', 'blm_hide_email_shortcode', 12);
+
+
 
 // remove junk from head
 remove_action('wp_head', 'rsd_link');
