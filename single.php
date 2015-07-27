@@ -8,6 +8,8 @@
 get_header(); ?>
 
 <div id="main">
+
+	<div class="wrap">
 	
 	<section id="content">
 		
@@ -35,6 +37,9 @@ get_header(); ?>
 	</section>
 	
 <?php get_sidebar(); ?>
+
+	</div> <!-- end of wrap div -->
+
 
 </div><!-- end of main div -->
 
