@@ -26,6 +26,9 @@ function blm_theme_setup() {
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
+	
+	/* Add theme support for visual editor with editor-style.css */
+ 	add_editor_style();
 
 	// Add theme support for post thumbnails (featured images). 
 	add_theme_support( 'post-thumbnails' );
@@ -39,12 +42,11 @@ function blm_theme_setup() {
 	// Enable support for HTML5 markup.
 	add_theme_support( 'html5', array(
 		'search-form', 'comment-form', 'comment-list', 'gallery', 'caption'
-	) );
-
+	) );	
+	
 }
 endif; // blm_theme_setup
 add_action( 'after_setup_theme', 'blm_theme_setup' );
-
 
 /**	
  *	Adds excerpt to pages 
@@ -55,8 +57,6 @@ add_action( 'init', 'excerpts_in_pages' );
 function excerpts_in_pages() {
      add_post_type_support( 'page', 'excerpt' );
 }
-
-
 
 /**
  * Register widget area
