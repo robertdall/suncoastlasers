@@ -1220,4 +1220,17 @@ object {
     	display: none;
   	}
   	
+  	.home #content {
+    	width: 100%;
+	}
+	
+	.home #content .hentry {
+		padding-bottom: 0px;
+	}
+	
+	.home #front-sidebar {
+		clear: both;
+		width: 100%;
+	}
+  	
 }
