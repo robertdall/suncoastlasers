@@ -137,6 +137,7 @@ add_filter( 'wp_title', 'blm_basic_wp_title', 10, 2 );
      unregister_widget('WP_Widget_Text');
      unregister_widget('WP_Widget_Recent_Comments');
      unregister_widget('WP_Widget_Tag_Cloud');
+     unregister_widget('Akismet_Widget');
  }
  add_action('widgets_init', 'blm_remove_default_widgets', 11);
  
