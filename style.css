@@ -1161,6 +1161,10 @@ object {
 	#blue-wrap .wrap {
 		padding: 0% 2%;
 	}
+		
+	footer .wrap {
+		padding: 0% 2%;
+	}
 }
 
 /* Green */
